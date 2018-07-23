@@ -1,28 +1,30 @@
 <template>
     <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
+        <nuxt-link to="/">Home</nuxt-link>
+        <nuxt-link to="/recipes">Recipes</nuxt-link>
+        <nuxt-link to="/contact">Contact</nuxt-link>
     </nav>
 </template>
 
 <style>
 nav {
-    margin: 20px;
+    background: blue;
+    margin-top: 0;
+    padding: 20px;
 }
 
 nav a {
     padding: 5px;
-    color: black;
+    color: white;
     transition: 1s;
 }
 
 nav a:visited {
-    color: grey;
+    color: white;
 }
 
 nav a:hover {
-    color: darkblue;
+    color: lightgreen;
 }
 
 </style>
